@@ -1,0 +1,135 @@
+.covered {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.game {
+    width: 60vw;
+    height: 60vh;
+    position: relative;
+    z-index: 10;
+    margin: 20vh auto;
+    background-color: brown;
+    border: dashed 5px whitesmoke;
+    display: flex;
+}
+
+.board {
+    width: 66%;
+    height: 100%;
+    border-right: dashed 5px whitesmoke;
+    position: relative;
+}
+
+.side-panel {
+    width: 34%;
+    height: 100%;
+    background-color: chocolate;
+}
+
+.fuel-item {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/fuel.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 6;
+}
+
+.fuel-layer {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.fire-item {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/fire.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 6;
+}
+
+.fire-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.fuel-counter {  
+    color: red;
+}
+
+.fuel-counter::before {
+    content: "Fuel!!!";
+    position: relative;
+    left: -20px;
+}
+
+.timer {
+    color: #fff;
+}
+
+.timer::before {
+    content: "Time";
+    position: relative;
+    left: -20px;
+}
+
+.game-over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: black;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.return-button {
+    display: block;
+    color: violet;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.rules {
+    font-size: 0.5rem;
+    color: #383838;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.go-back-btn {
+    height: 3vw;
+    width: 10vw;
+    border-radius: 1vw;
+    background-color: orangered;
+    color: azure;
+    text-transform: uppercase;
+    cursor: pointer;
+}

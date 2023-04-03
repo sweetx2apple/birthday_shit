@@ -1,0 +1,8 @@
+.bike {
+    width: 60px;
+    height: 36px;
+    background-image: url('../img/bike.png');
+    position: absolute;
+    background-size: cover;
+    z-index: 5;
+}
